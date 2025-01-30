@@ -83,8 +83,10 @@ Apart from these 3 folders, this sample also using several files on the root fol
    > config.yaml   : yaml file for storing any config-related data for this project
    ```
 
-## Related Documentation for Appium on Java
-- Appium Java-Client
+## Related Documentation for Appium
+- Appium API Documentation (any Language)
+  https://appium.github.io/appium.io/docs/en/about-appium/api/
+- Appium for specific Java-Client
   https://github.com/appium/java-client
 - Page Factory using Appium on Java-Client
   https://github.com/appium/java-client/blob/master/docs/Page-objects.md
