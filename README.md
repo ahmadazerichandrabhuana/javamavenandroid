@@ -8,12 +8,33 @@ Sample Test Automation for Android Apps using Appium on Java Maven with TestNG a
    - [Setup JAVA_HOME manually](https://medium.com/@zorozeri/setting-up-java-home-5abae0118bfe).
    - [Setup MAVEN_HOME manually](https://medium.com/@zorozeri/install-maven-by-setting-up-maven-home-abb4d158fcc6).
    - [Use SDKMAN!](https://medium.com/@zorozeri/manage-java-version-using-sdkman-including-maven-gradle-scala-kotlin-and-many-more-82532be9437e) to setup everything Java-related automatically.
-2. Install any IDE or Code Editor you're comfort with.
+2. Install [Android Studio](https://developer.android.com/studio/install), then install Android SDK using Android Studio, and setup ANDROID_HOME manually into your PATH file (Environment Variables) as well (use Step 1 above for reference).
+3. Install [NodeJS](https://nodejs.org/en/download/prebuilt-installer). 
+4. Install [Appium](https://appium.io/docs/en/2.2/quickstart/install/) and install appium driver `uiautomator2`.
+5. Install and run [appium-doctor](https://www.npmjs.com/package/appium-doctor) to make sure all your appium's dependencies are OK, trouble shoot if any red "x" appears (you need to google it yourself).
+6. Install [ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/), or add ADB installed from Android Studio into your PATH file.
+7. Download and install this [Demo Apps](https://github.com/saucelabs/my-demo-app-rn/releases)(`.apk` file) into your Android Device (credit to [Wim Selles](https://github.com/wswebcreation)).
+8. Install any IDE or Code Editor you're comfort with.
    Recommended :
-   - IDE : [IntelliJ IDEA](https://www.jetbrains.com/idea/download).
+   - IDE : [IntelliJ IDEA](https://www.jetbrains.com/idea/download), since this code is Java-based.
    - Code Editor : [VS Code](https://code.visualstudio.com/).
-3. Install [Allure Report](https://allurereport.org/docs/install/). 
-4. Download this code repository into your local machine.
+9. Install [Allure Report](https://allurereport.org/docs/install/). 
+10. Download this code repository into your local machine.
+
+
+## Device Connection
+
+Connect your device to your computer, check it's udid : 
+```
+adb devices
+```
+Put it on file `config.yaml` line #1 : 
+```
+udid: {your device udid}
+sample : 
+udid: emulator-5554
+```
+
 
 ## Run Tests 
 * Run all tests : Open terminal and run this command
@@ -62,11 +83,13 @@ Apart from these 3 folders, this sample also using several files on the root fol
    > config.yaml   : yaml file for storing any config-related data for this project
    ```
 
-## Related Documentation for Selenium on Java
-- Actions (Interact with Elements)
-  https://www.selenium.dev/documentation/webdriver/elements/interactions/
-- Page Object Model Patterns
-  https://www.selenium.dev/documentation/test_practices/encouraged/page_object_models/
+## Related Documentation for Appium on Java
+- Appium Java-Client
+  https://github.com/appium/java-client
+- Page Factory using Appium on Java-Client
+  https://github.com/appium/java-client/blob/master/docs/Page-objects.md
+- Appium Action Command (used for Swipe Action)
+  https://appium.github.io/appium.io/docs/en/commands/interactions/actions/
 
 ## Related Documentation for TestNG on Java
 - Assertion
