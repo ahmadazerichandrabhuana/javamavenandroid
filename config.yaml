@@ -1,0 +1,3 @@
+udid: emulator-5554
+appPackage: com.saucelabs.mydemoapp.rn
+appActivity: com.saucelabs.mydemoapp.rn.MainActivity
