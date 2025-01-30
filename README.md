@@ -8,7 +8,7 @@ Sample Test Automation for Android Apps using Appium on Java Maven with TestNG a
    - [Setup JAVA_HOME manually](https://medium.com/@zorozeri/setting-up-java-home-5abae0118bfe).
    - [Setup MAVEN_HOME manually](https://medium.com/@zorozeri/install-maven-by-setting-up-maven-home-abb4d158fcc6).
    - [Use SDKMAN!](https://medium.com/@zorozeri/manage-java-version-using-sdkman-including-maven-gradle-scala-kotlin-and-many-more-82532be9437e) to setup everything Java-related automatically.
-2. Install [Android Studio](https://developer.android.com/studio/install), then install **Android SDK** using Android Studio, and setup ANDROID_HOME manually into your PATH file (Environment Variables) as well, you can use Step 1 above for reference.
+2. Install [Android Studio](https://developer.android.com/studio/install), then install `Android SDK` using Android Studio, and setup ANDROID_HOME manually into your PATH file (Environment Variables) as well, you can use Step 1 above for reference.
 3. Install [NodeJS](https://nodejs.org/en/download/prebuilt-installer). 
 4. Install [Appium](https://appium.io/docs/en/2.2/quickstart/install/) and install appium driver `uiautomator2`.
 5. Install and run [appium-doctor](https://www.npmjs.com/package/appium-doctor) to make sure all of your appium's dependencies are OK, trouble shoot if any red "x" appears (you need to google it yourself).
