@@ -69,7 +69,7 @@ This sample Test Automation consists of 2 main folders :
 * src
    ```
    Consists of 2 more folders :
-   > main   : contains web elements and actions for each specific web pages (implementation of Page Object Model patterns)
+   > main   : contains page elements and actions for each specific pages (implementation of Page Object Model patterns using Appium's Page Factory)
    > test   : contains test cases
    ```
 * testsuites
